@@ -2,6 +2,7 @@ import { css } from '@emotion/core';
 import { graphql } from 'gatsby';
 import { Parser } from 'html-to-react';
 import React from 'react';
+import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 
 const container = css`
@@ -103,7 +104,10 @@ export default props => {
   return (
     <Layout>
       <div css={container}>
-        <h1>{name}</h1>
+        <div style={{ display: 'block' }}>
+          <Img style={{ float: 'right' }} fixed={data.file.childImageSharp.fixed} />
+          <h1>{name}</h1>
+        </div>
         {htmlToReactParser.parse(description)}
         {sections}
       </div>
@@ -113,6 +117,15 @@ export default props => {
 
 export const pageQuery = graphql`
   query {
+    file(relativePath: { eq: "zyszys.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 125, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     prismicHomepage {
       data {
         name {
