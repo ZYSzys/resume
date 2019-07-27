@@ -83,7 +83,6 @@ const container = css`
 const htmlToReactParser = new Parser();
 
 export default props => {
-  console.log(props);
   const { data } = props;
   const content = data.prismicHomepage.data;
   const name = content.name.text;
