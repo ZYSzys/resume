@@ -28,7 +28,7 @@ const container = css`
 
   p {
     margin-bottom: 0.25rem;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   a {
@@ -68,7 +68,7 @@ const container = css`
   .skills ul {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .skills li {

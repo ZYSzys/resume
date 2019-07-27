@@ -136,16 +136,14 @@ const globalStyle = css`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, Roboto, Helvetica, Arial, Noto Sans,
       sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
-  footer {
-    text-align: center;
-    margin-bottom: 15px;
-  }
 `;
 
 const Layout = ({ children }) => (
   <div>
     <Global styles={globalStyle} />
     <Helmet>
+      <meta charSet="utf-8" />
+      <title>ZYSzys Resume</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
     </Helmet>
     {children}
