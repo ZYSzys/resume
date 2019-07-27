@@ -3,6 +3,7 @@ require('dotenv').config({
 });
 
 module.exports = {
+  pathPrefix: `/resume`,
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
