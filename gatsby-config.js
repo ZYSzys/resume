@@ -25,5 +25,17 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `ZYSzys's resume`,
+        short_name: `ZYSzys`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/assets/zyszys.jpg`,
+      },
+    },
   ],
 };

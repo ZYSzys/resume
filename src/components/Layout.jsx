@@ -143,7 +143,7 @@ const Layout = ({ children }) => (
     <Global styles={globalStyle} />
     <Helmet>
       <meta charSet="utf-8" />
-      <title>ZYSzys Resume</title>
+      <title>ZYSzys's Resume</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
     </Helmet>
     {children}
