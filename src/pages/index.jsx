@@ -29,7 +29,7 @@ const container = css`
 
   p {
     margin-bottom: 0.25rem;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   a {
